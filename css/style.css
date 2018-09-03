@@ -87,3 +87,34 @@ img {
   padding: 0;
   list-style: none;
 }
+
+.header {
+  margin-top: 40px;
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.header__nav {
+  position: relative;
+}
+
+.header-nav__logo {
+  position: absolute;
+  top: -24px;
+  left: 38px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.header-nav__logo:hover,
+.header-nav__logo:focus {
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.header-nav__logo:active {
+  color: rgb(0, 0, 0, 0.3);
+}
+

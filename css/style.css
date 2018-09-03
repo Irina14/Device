@@ -51,6 +51,7 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: #000000;
+  letter-spacing: 0.01em;
   background: #ffffff;
 }
 
@@ -79,7 +80,6 @@ img {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .default-list {
@@ -89,32 +89,118 @@ img {
 }
 
 .header {
-  margin-top: 40px;
-  background-color: rgba(240, 197, 46, 0.5);
-}
-
-.header__nav {
   position: relative;
+  margin-top: 40px;
+  padding: 35px 60px 50px;
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .header-nav__logo {
   position: absolute;
   top: -24px;
-  left: 38px;
+  left: 58px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
   line-height: 48px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.01em;
 }
 
 .header-nav__logo:hover,
 .header-nav__logo:focus {
-  color: rgb(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .header-nav__logo:active {
-  color: rgb(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
+.nav-user__search {
+  position: relative;
+  display: flex;
+  width: 500px;
+}
+
+.nav-user__search::before {
+  content: "";
+  left: 2px;
+  top: calc(50% - 8px);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url("../img/search.svg") no-repeat;
+}
+
+.nav-user__search input,
+.nav-user__search button {
+  font: inherit;
+  color: #000000;
+  letter-spacing: 0.01em;
+  background: transparent;
+}
+
+.nav-user__search input {
+  width: 355px;
+  padding: 9px 15px 9px 38px;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-user__search button {
+  display: none;
+  padding: 0 19px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+.nav-user__search button:hover,
+.nav-user__search button:focus {
+  color: #ffffff;
+  background: #000000;
+}
+
+.nav-user__search button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #000000;
+}
+
+.nav-user__search input:focus + button {
+  display: block;
+}
+
+.nav-user__search input:focus {
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+
+.nav-user__search input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-user__search input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-user__search input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-user__search input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-user__search input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-user__search input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-user__search input:hover::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-user__search input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}

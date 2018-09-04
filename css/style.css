@@ -91,8 +91,14 @@ img {
 .header {
   position: relative;
   margin-top: 40px;
-  padding: 35px 60px 50px;
+  padding: 33px 60px 50px;
   background-color: rgba(240, 197, 46, 0.5);
+}
+
+.header-nav__user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .header-nav__logo {
@@ -203,4 +209,93 @@ img {
 
 .nav-user__search input:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-user__authorization {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  width: 280px;
+}
+
+.nav-user__link {
+  position: relative;
+  color: #000000;
+}
+
+.nav-user__link:hover,
+.nav-user__link:focus {
+  opacity: 0.6;
+}
+
+.nav-user__link:active {
+  opacity: 0.3;
+}
+
+.nav-user__exit {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-user__compare,
+.nav-user__basket {
+  width: 100px;
+  margin: 0;
+  text-align: right;
+}
+
+.nav-user__link--hidden {
+  display: none;
+}
+
+.nav-user__input,
+.nav-user__profile {
+  padding-left: 27px;
+}
+
+.nav-user__input::before,
+.nav-user__profile::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 6px);
+  width: 13px;
+  height: 12px;
+  background: url("../img/user.svg") no-repeat;
+}
+
+.nav-user__profile {
+  margin-right: 18px;
+}
+
+.nav-user__compare {
+  margin-right: 20px;
+  padding-right: 3px;
+} 
+
+.nav-user__compare a {
+  padding-left: 20px;
+}
+
+.nav-user__compare a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  background: url("../img/compare.svg") no-repeat;
+}
+
+.nav-user__basket a {
+  padding-left: 22px;
+}
+
+.nav-user__basket a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  background: url("../img/basket.svg") no-repeat;
 }

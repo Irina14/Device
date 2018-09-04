@@ -8,24 +8,24 @@
 </head>
 <body>
   <header class="header container">
-    <nav class="header__nav header-nav">
+    <nav class="header__nav header-nav"> 
       <a class="header-nav__logo">Device</a>
       <div class="header-nav__user nav-user">
-        <form class="nav-user__search">
+        <form class="nav-user__search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search-field"><span class="visually-hidden">Поиск по сайту</span></label>
           <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
           <button type="button">Найти</button>
         </form>
         <ul class="nav-user__authorization default-list">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Валентин Петухов</a></li>
-          <li><a href="#">Выйти</a></li> 
+          <li><a class="nav-user__link nav-user__input" href="#">Войти</a></li>
+          <li><a class="nav-user__link nav-user__profile nav-user__link--hidden" href="#">Валентин Петухов</a></li>
+          <li><a class="nav-user__exit nav-user__link--hidden" href="#">Выйти</a></li> 
         </ul>
         <p class="nav-user__compare">
-          <a href="#">Сравнить</a>
+          <a class="nav-user__link" href="#">Сравнить</a>
         </p>
         <p class="nav-user__basket">
-          <a href="#">Корзина</a>
+          <a class="nav-user__link" href="#">Корзина</a>
         </p>
       </div>
       <ul class="header-nav__site nav-site default-list">

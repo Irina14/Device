@@ -215,7 +215,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
-  width: 280px;
+  width: 277px;
 }
 
 .nav-user__link {
@@ -268,8 +268,7 @@ img {
 }
 
 .nav-user__compare {
-  margin-right: 20px;
-  padding-right: 3px;
+  margin-right: 23px;
 } 
 
 .nav-user__compare a {
@@ -299,3 +298,4 @@ img {
   height: 12px;
   background: url("../img/basket.svg") no-repeat;
 }
+

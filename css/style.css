@@ -91,7 +91,7 @@ img {
 .header {
   position: relative;
   margin-top: 40px;
-  padding: 33px 60px 50px;
+  padding: 33px 60px 47px;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
@@ -99,6 +99,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 27px;
 }
 
 .header-nav__logo {
@@ -298,4 +299,68 @@ img {
   height: 12px;
   background: url("../img/basket.svg") no-repeat;
 }
+
+.header-nav__site {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-site__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.nav-site__link:hover,
+.nav-site__link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-site__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-site__catalog {
+  position: relative;
+  padding-right: 29px;
+}
+
+.nav-site__catalog::before,
+.nav-site__catalog::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: calc(50% - 1px);
+  width: 16px;
+  height: 2px;
+  background: #b8a974;
+}
+
+.nav-site__catalog::after {
+  transform: rotate(90deg);
+}
+
+.header-nav__site li:not(:first-child) {
+  width: 160px;
+}
+
+.header-nav__site li:first-child {
+  width: 280px; 
+  margin-right: auto;
+}
+
+.header-nav__site li:last-child {
+  margin-left: 20px;
+  text-align: right;
+}
+
+.nav-site__submenu {
+  position: absolute;
+  display: none;
+}
+
 

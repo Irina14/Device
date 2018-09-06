@@ -8,43 +8,51 @@
 </head>
 <body>
   <header class="header container">
-    <nav class="header__nav header-nav"> 
-      <a class="header-nav__logo">Device</a>
-      <div class="header-nav__user nav-user">
-        <form class="nav-user__search" action="https://echo.htmlacademy.ru" method="get">
+    <nav class="header__nav nav-header">
+      <a class="nav-header__logo">Device</a>
+      <div class="nav-header__user user-nav">
+        <form class="user-nav__search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search-field"><span class="visually-hidden">Поиск по сайту</span></label>
           <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
           <button type="button">Найти</button>
         </form>
-        <ul class="nav-user__authorization default-list">
-          <li><a class="nav-user__link nav-user__input" href="#">Войти</a></li>
-          <li><a class="nav-user__link nav-user__profile nav-user__link--hidden" href="#">Валентин Петухов</a></li>
-          <li><a class="nav-user__exit nav-user__link--hidden" href="#">Выйти</a></li> 
+        <ul class="user-nav__authorization default-list">
+          <li><a class="user-nav__link user-nav__input" href="#">Войти</a></li>
+          <li><a class="user-nav__link user-nav__profile user-nav__link--hidden" href="#">Валентин Петухов</a></li>
+          <li><a class="user-nav__exit user-nav__link--hidden" href="#">Выйти</a></li>
         </ul>
-        <p class="nav-user__compare">
-          <a class="nav-user__link" href="#">Сравнить</a>
+        <p class="user-nav__compare">
+          <a class="user-nav__link" href="#">Сравнить</a>
         </p>
-        <p class="nav-user__basket">
-          <a class="nav-user__link" href="#">Корзина</a>
+        <p class="user-nav__basket">
+          <a class="user-nav__link" href="#">Корзина</a>
         </p>
       </div>
-      <ul class="header-nav__site nav-site default-list">
-        <li><a class="nav-site__link nav-site__catalog" href="#">Каталог товаров</a>
-          <ul class="nav-site__submenu submenu default-list">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
+      <ul class="nav-header__site site-nav default-list">
+        <li><a class="site-nav__link site-nav__catalog" href="#">Каталог товаров</a>
+          <ul class="site-nav__submenu submenu default-list">
+            <div class="submenu__wrapper">
+              <div class="submenu__column">
+                <li><a class="submenu__link" href="#">Виртуальная реальность</a></li>
+                <li><a class="submenu__link" href="#">Моноподы для селфи</a></li>
+                <li><a class="submenu__link" href="#">Экшн-камеры</a></li>
+              </div>
+              <div class="submenu__column">
+                <li><a class="submenu__link" href="#">Фитнес-браслеты</a></li>
+                <li><a class="submenu__link" href="#">Умные часы</a></li>
+              </div>
+              <div class="submenu__column">
+                <li><a class="submenu__link" href="#">Квадрокоптеры</a></li>
+              </div>
+            </div>
           </ul>
         </li>
-        <li><a class="nav-site__link" href="#">Доставка</a></li>
-        <li><a class="nav-site__link" href="#">Гарантия</a></li>
-        <li><a class="nav-site__link" href="#">Контакты</a></li>
+        <li><a class="site-nav__link" href="#">Доставка</a></li>
+        <li><a class="site-nav__link" href="#">Гарантия</a></li>
+        <li><a class="site-nav__link" href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
- 
+
 </body>
 </html>

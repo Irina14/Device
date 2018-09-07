@@ -363,12 +363,11 @@ img {
   left: 0;
   display: none;
   width: 1160px;
-  height: 160px;
   padding: 18px 60px 40px;
   background: #f7e296;
 }
 
-.site-nav__submenu li {
+.submenu__list {
   width: 200px;
 }
 
@@ -391,7 +390,7 @@ img {
   flex-wrap: wrap;
 }
 
-.submenu__column:first-child {
+.submenu__list:first-child {
   margin-right: 40px;
 }
 

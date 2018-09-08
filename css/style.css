@@ -361,6 +361,7 @@ img {
 .site-nav__submenu {
   position: absolute;
   left: 0;
+  z-index: 2;
   display: none;
   width: 1160px;
   padding: 18px 60px 40px;
@@ -397,4 +398,39 @@ img {
 .site-nav__catalog:hover + .site-nav__submenu,
 .site-nav__catalog:focus + .site-nav__submenu {
   display: block;
+}
+
+.slider {
+  position: relative;
+  padding: 6px 0 50px;
+}
+
+.slider__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 1160px;
+  height: 113px;
+  background-color: #f7e296;
+}
+
+.slider__item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.slider__item:not(:first-child) {
+  display: none;
+}
+
+.slider__image,
+.slider__wrapper {
+  width: 560px;
+}
+
+.slider__image {
+  margin-right: 40px;
+  text-align: center;
 }

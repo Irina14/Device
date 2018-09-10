@@ -451,7 +451,7 @@ img {
 .slider__desc {
   width: 485px;
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 41px;
   color: #464646;
 }
 
@@ -474,6 +474,12 @@ img {
   width: 100px;
   height: 7px;
   background: #ffffff;
+}
+
+.slider__button-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button {
@@ -516,4 +522,41 @@ img {
 .slider__button {
   min-width: 220px;
   padding: 11px 42px;
+}
+
+.slider__controls {
+  display: flex;
+  width: 160px;
+}
+
+.controls {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin: 8px;
+  background: none;
+  border: 0;
+}
+
+.controls::before,
+.controls--current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.controls--current::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 4px;
+  border: 1px solid #000000;
+  border-radius: 50%;
 }

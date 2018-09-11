@@ -423,7 +423,7 @@ img {
 }
 
 .slider__item:not(:first-child) {
- /* display: none;*/
+  display: none;
 }
 
 .slider__image,
@@ -557,7 +557,7 @@ img {
   content: "";
   position: absolute;
   top: calc(50% - 2px);
-  left: calc(50% - 2px);
+  left: 4px;
   width: 4px;
   height: 4px;
   border: 1px solid #000000;
@@ -572,16 +572,7 @@ img {
   border-collapse: collapse;
 }
 
-.slider__table tbody {
-  display: flex;
-  flex-direction: column;
-}
-
-.table__title {
-  order: 1;
-}
-
-.slider__table th, td {
+.slider__table td, th {
   width: 160px;
 }
 
@@ -596,6 +587,7 @@ img {
   line-height: 20px;
   font-weight: 300;
   color: #464646;
+  text-align: left;
 }
 
 .slider__table td {

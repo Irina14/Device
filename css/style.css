@@ -403,7 +403,7 @@ img {
 
 .slider {
   position: relative;
-  padding-bottom: 50px;
+  min-height: 510px;
 }
 
 .slider__background {
@@ -547,7 +547,7 @@ img {
 .slider__controls {
   position: absolute;
   right: 0;
-  top: 319px;
+  bottom: 161px;
   z-index: 2;
   display: flex;
   width: 160px;

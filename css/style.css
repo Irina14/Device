@@ -648,6 +648,14 @@ img {
   background: rgba(240, 197, 46, 0.5);
 }
 
+.popular__image-2 {
+  align-self: flex-end;
+}
+
+.popular__link {
+  display: block;
+}
+
 .popular__link:hover .popular__image,
 .popular__link:focus .popular__image {
   background: #f0c52e;
@@ -657,7 +665,6 @@ img {
 .popular__link:active .popular__image img {
   opacity: 0.3;
 }
-
 
 .popular__title {
   margin: 0;

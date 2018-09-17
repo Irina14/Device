@@ -64,6 +64,8 @@ img {
   height: auto;
 }
 
+/*Общие свойства*/
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -87,6 +89,46 @@ img {
   padding: 0;
   list-style: none;
 }
+
+.button {
+  display: inline-block;
+  position: relative;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 4px);
+  z-index: 0;
+  width: 100%;
+  height: 8px;
+  background: #f0c52e;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button:hover,
+.button:focus {
+  background: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background: #f0c52e;
+}
+
+/*Хедер*/
 
 .header {
   position: relative;
@@ -368,6 +410,8 @@ img {
   background: #f7e296;
 }
 
+/*Подменю*/
+
 .submenu__list {
   width: 200px;
 }
@@ -400,6 +444,8 @@ img {
 .site-nav__catalog:focus + .site-nav__submenu {
   display: block;
 }
+
+/*Слайдер*/
 
 .slider {
   position: relative;
@@ -501,44 +547,6 @@ img {
   color: #ffffff;
 }
 
-.button {
-  display: inline-block;
-  position: relative;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: calc(50% - 4px);
-  z-index: 0;
-  width: 100%;
-  height: 8px;
-  background: #f0c52e;
-}
-
-.button span {
-  position: relative;
-  z-index: 1;
-}
-
-.button:hover,
-.button:focus {
-  background: #f0c52e;
-}
-
-.button:active {
-  color: rgba(0, 0, 0, 0.3);
-  background: #f0c52e;
-}
-
 .slider__button {
   min-width: 220px;
   margin-bottom: 45px;
@@ -620,6 +628,8 @@ img {
   color: #000000;
 }
 
+/*Популярные товары*/
+
 .popular {
   margin-bottom: 80px;
 }
@@ -676,4 +686,23 @@ img {
   color: #000000;
 }
 
+/*Сервисы*/
 
+.services {
+  position: relative;
+}
+
+.services__background {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 288px;
+  background: #e5e5e5;
+}
+
+.services__button,
+.services__slider {
+  position: relative;
+  z-index: 1;
+}

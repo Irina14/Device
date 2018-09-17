@@ -67,4 +67,3 @@ controls_3.addEventListener('click', function (evt) {
     }
 
   });
-

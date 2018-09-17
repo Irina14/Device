@@ -633,7 +633,7 @@ img {
 /*Популярные товары*/
 
 .popular {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .popular__list {
@@ -692,6 +692,8 @@ img {
 
 .services {
   position: relative;
+  min-height: 388px;
+  margin-bottom: 107px;
 }
 
 .services__background {
@@ -710,6 +712,7 @@ img {
 .services__controls {
   width: 280px;
   margin-right: 120px;
+  padding-top: 79px;
 }
 
 .services__slider {
@@ -732,7 +735,7 @@ img {
 }
 
 .services__controls li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .services__button:active {
@@ -752,4 +755,53 @@ img {
 
 .services__button:active::before {
   background: #000000;
+}
+
+.services__controls::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -3.5px;
+  width: 7px;
+  height: 319px;
+  background: #000000;
+}
+
+.services__slider h2 {
+  width: 440px;
+  margin: 0;
+  padding-top: 72px;
+  margin-bottom: 30px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.services__slider p {
+  width: 440px;
+  margin: 0;
+  color: #464646;
+  letter-spacing: 0.015em;
+}
+
+.services__slider li {
+  min-height: 300px;
+}
+
+.services__slider li:not(:nth-child(2)) {
+  display: none;
+}
+
+.services__delivery {
+  background: url("../img/delivery.svg") no-repeat 558px 85px;
+}
+
+.services__warranty {
+  background: url("../img/warranty.svg") no-repeat 544px 60px;
+}
+
+.services__credit {
+  background: url("../img/credit.svg") no-repeat 533px 60px;
 }

@@ -100,6 +100,8 @@ img {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  background: transparent;
+  border: none;
 }
 
 .button::before {
@@ -701,8 +703,53 @@ img {
   background: #e5e5e5;
 }
 
-.services__button,
+.services__wrapper {
+  display: flex;
+}
+
+.services__controls {
+  width: 280px;
+  margin-right: 120px;
+}
+
+.services__slider {
+  width: 760px;
+}
+
+.services__controls,
 .services__slider {
   position: relative;
   z-index: 1;
+}
+
+.services__button {
+  min-width: 160px;
+  padding: 8px 10px;
+}
+
+.services__controls li {
+  position: relative;
+}
+
+.services__controls li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.services__button:active {
+  color: #f7e184;
+  background: #000000;
+  outline: none;
+}
+
+.services__button:active + .services__button--active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+.services__button:active::before {
+  background: #000000;
 }

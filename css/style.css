@@ -130,6 +130,14 @@ img {
   background: #f0c52e;
 }
 
+.slider--show {
+  display: block;
+}
+
+.slider--hidden {
+  display: none;
+}
+
 /*Хедер*/
 
 .header {
@@ -474,14 +482,6 @@ img {
   display: flex;
 }
 
-.slider--show {
-  display: block;
-}
-
-.slider--hidden {
-  display: none;
-}
-
 .slider__image,
 .slider__content {
   width: 560px;
@@ -738,13 +738,15 @@ img {
   margin-bottom: 25px;
 }
 
-.services__button:active {
+.services__button:active,
+.services__button--active {
   color: #f7e184;
   background: #000000;
   outline: none;
 }
 
-.services__button:active + .services__button--active {
+.services__button:active + .services__box,
+.services__box--active {
   position: absolute;
   top: 0;
   right: 0;
@@ -788,10 +790,6 @@ img {
 
 .services__slider li {
   min-height: 300px;
-}
-
-.services__slider li:not(:nth-child(2)) {
-  display: none;
 }
 
 .services__delivery {

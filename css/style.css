@@ -850,3 +850,29 @@ img {
 .brands__item a:focus .brands__image--color {
   z-index: 2;
 }
+
+/*О нас и Контакты*/
+.info-contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.info,
+.contacts {
+  width: 560px;
+}
+
+.info {
+  margin-right: 40px;
+}
+
+.info__title,
+.contacts__title {
+  margin: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}

@@ -693,7 +693,7 @@ img {
 .services {
   position: relative;
   min-height: 388px;
-  margin-bottom: 107px;
+  margin-bottom: 94px;
 }
 
 .services__background {
@@ -802,4 +802,51 @@ img {
 
 .services__credit {
   background: url("../img/credit.svg") no-repeat 533px 60px;
+}
+
+/*Бренды*/
+
+.brands {
+  margin-bottom: 84px;
+}
+
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brands__item {
+  position: relative;
+  width: 260px;
+}
+
+.brands__item:not(:nth-child(4n)) {
+  margin-right: 40px;
+}
+
+.brands__image,
+.brands__image--color {
+  width: 260px;
+  height: 100px;
+}
+
+.brands__image {
+  position: relative;
+  z-index: 1;
+}
+
+.brands__image--color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.brands__item a {
+  display: block;
+}
+
+.brands__item a:hover .brands__image--color,
+.brands__item a:focus .brands__image--color {
+  z-index: 2;
 }

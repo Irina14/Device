@@ -99,6 +99,7 @@ img {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.2em;
   background: transparent;
   border: none;
@@ -552,7 +553,7 @@ img {
 .slider__button {
   min-width: 220px;
   margin-bottom: 45px;
-  padding: 11px 42px;
+  padding: 11px 15px;
 }
 
 .slider__controls {
@@ -852,10 +853,12 @@ img {
 }
 
 /*О нас и Контакты*/
+
 .info-contacts__wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 80px;
+  padding-top: 51px;
 }
 
 .info,
@@ -870,9 +873,50 @@ img {
 .info__title,
 .contacts__title {
   margin: 0;
+  margin-bottom: 43px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
   letter-spacing: 0.02em;
 }
+
+.info__text {
+  margin: 0;
+  width: 485px;
+}
+
+.info__text--1 {
+  margin-bottom: 30px;
+}
+
+.info__text--2 {
+  margin-bottom: 65px;
+}
+
+.info__list {
+  margin-bottom: 52px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+.info__button,
+.contacts__button {
+  width: 260px;
+  padding: 11px 15px;
+}
+
+.contacts__text {
+  width: 530px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.contacts__map {
+  width: 560px;
+  height: 220px;
+  margin-bottom: 58px;
+}
+
